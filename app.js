@@ -1,2 +1,13 @@
-//O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
-alert("hellor wourld")
+let listaAmigos = ["jessica"];
+
+function sorteio() {
+    let quantidadeAmigos = listaAmigos.length;
+    if (quantidadeAmigos == 0) {
+        console.log("Não há amigos para realizarmos o sorteio.");
+    } else {
+        console.log("tudo certo")
+    }
+    
+}
+sorteio();
+console.log("Olá")
