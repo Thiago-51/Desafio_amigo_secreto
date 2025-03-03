@@ -1,13 +1,18 @@
-let listaAmigos = ["jessica"];
+let listaAmigos = [];
 
-function sorteio() {
-    let quantidadeAmigos = listaAmigos.length;
-    if (quantidadeAmigos == 0) {
-        console.log("Não há amigos para realizarmos o sorteio.");
+function adicionarAmigo() {
+    let amigo = document.querySelector('input').value;
+    if (amigo == ""){
+        alert("Por favor, digíte um nome a ser adicionado à lista de amigos.");
     } else {
-        console.log("tudo certo")
+        listaAmigos.push(amigo);
     }
-    
+    limparCampo();
+    console.log(listaAmigos);
 }
-sorteio();
-console.log("Olá")
+
+function limparCampo() {
+    amigo = document.querySelector('input');
+    amigo.value = '';
+}
+
