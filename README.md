@@ -25,7 +25,7 @@ A função sortearAmigo() foi criada que maneira que geramos um número aleatór
 
 Já a função novaLista() faz uso das duas funções já descritas e as funções limparCampo() e LimparListaExibida(a, b) que todas as listas e campos do site sejam limpos de possamos criar uma nova lista de amigos a ser sorteado.
 
-Agora só resta a função exibirNomes(), que nada mais faz do que pegar nossa lista de amigos e escrever cada um dos nomes em nossa lista em uma lista <ul> como elementos <li> desta lista.
+Agora só resta a função exibirNomes(), que nada mais faz do que pegar nossa lista de amigos e escrever cada um dos nomes em nossa lista em uma lista ul como elementos li desta lista.
 
 Espero que este README tenha auxiliado no entendimento do programa contido no app.js.
 
