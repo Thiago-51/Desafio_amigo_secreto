@@ -1,14 +1,33 @@
 let amigos = [];
+let x = 0;
+
 
 function adicionarAmigo() {
+    x = 0
     let amigo = document.querySelector('input').value;
     if (amigo == ""){
         alert("Por favor, digíte um nome a ser adicionado à lista de amigos.");
-    } else {
-        amigos.push(amigo);
+    }else {
+        if (amigos.length == 0){
+            amigos.push(amigo);
+        } else{
+            while (x < amigos.length){
+                if (amigo == amigos[x]){
+                    alert("Este nome já está na lista, digíte outro.");
+                    break;
+                }else {
+                    if (x == (amigos.length - 1)){
+                        amigos.push(amigo);
+                        break;
+                    }
+                }
+                x++;
+            }
+        }
+        limparCampo();
+        console.log(amigos)
+        exibirNomes();
     }
-    limparCampo(amigo);
-    console.log(amigos);
 }
 
 function limparCampo() {
@@ -17,6 +36,7 @@ function limparCampo() {
 }
 
 function exibirNomes(){
+    limparListaExibida()
     let quantiAmigos = amigos.length;
     let nomesExibidos = document.getElementById("listaAmigos");
     let n = 0;
@@ -33,3 +53,4 @@ function limparListaExibida() {
     nomesExibidos.innerHTML = "";
 }
 
+limparCampo();
