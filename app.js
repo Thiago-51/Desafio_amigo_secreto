@@ -1,7 +1,9 @@
 let amigos = [];
 let x = 0;
+let sorteado = document.getElementById("resultado");
+let nomesExibidos = document.getElementById("listaAmigos");
 
-
+//____________________________________________________________________________________
 function adicionarAmigo() {
     x = 0
     let amigo = document.querySelector('input').value;
@@ -29,16 +31,15 @@ function adicionarAmigo() {
         exibirNomes();
     }
 }
-
+//____________________________________________________________________________________
 function limparCampo() {
     amigo = document.querySelector('input');
     amigo.value = '';
 }
-
+//____________________________________________________________________________________
 function exibirNomes(){
-    limparListaExibida()
+    limparListaExibida(nomesExibidos, "listaAmigos")
     let quantiAmigos = amigos.length;
-    let nomesExibidos = document.getElementById("listaAmigos");
     let n = 0;
     while (n < quantiAmigos) {
         let li = document.createElement("li");
@@ -47,10 +48,25 @@ function exibirNomes(){
         n++;
     }
 }
-
-function limparListaExibida() {
-    nomesExibidos = document.getElementById("listaAmigos");
-    nomesExibidos.innerHTML = "";
+//____________________________________________________________________________________
+function limparListaExibida(a, b) {
+    a = document.getElementById(b);
+    a.innerHTML = "";
 }
-
+//____________________________________________________________________________________
+function sortearAmigo(){
+    limparListaExibida(sorteado, "resultado")
+    let posicaoAmigo = parseInt(Math.random() * amigos.length);
+    let sortudo = document.createElement("li");
+    sortudo.textContent = amigos[posicaoAmigo];
+    sorteado.appendChild(sortudo);
+}
+function novaLista(){
+    limparCampo();
+    limparListaExibida(sorteado, "resultado");
+    limparListaExibida(nomesExibidos, "listaAmigos");
+    amigos = [];
+    sortearAmigo();
+    exibirNomes();
+}
 limparCampo();
