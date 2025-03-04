@@ -1,8 +1,7 @@
 *Sobre o desenvolvimento deste projeto*
 
 
-Ao realizar este projeto, tive como inteção realizar meu primeiro challenge do programa ONE, isto é, foi meu primeiro projeto ao longo desta jornada.
-Neste challenge pude consolidar parte do que aprendi da linguagem javaScript e também aprender a utilizar o chatGPT para auxiliar meu trabalho em tópicos que não tenho muito conhecimento, como a linguagem HTML.
+Este projeto é meu primeiro challenge do programa ONE, isto é, foi meu primeiro projeto ao longo desta jornada. Neste challenge pude consolidar parte do que aprendi da linguagem javaScript e também aprender a utilizar o chatGPT para auxiliar meu trabalho em tópicos que não tenho muito conhecimento ainda, como a linguagem HTML.
 
 
 ![Tela final do Challenge](image.png)
