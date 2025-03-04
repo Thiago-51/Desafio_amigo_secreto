@@ -5,6 +5,9 @@ Ao realizar este projeto, tive como inteção realizar meu primeiro challenge do
 Neste challenge pude consolidar parte do que aprendi da linguagem javaScript e também aprender a utilizar o chatGPT para auxiliar meu trabalho em tópicos que não tenho muito conhecimento, como a linguagem HTML.
 
 
+![Tela final do Challenge](image.png)
+
+
 *O que cada função do app.js faz?*
 
 
@@ -16,7 +19,7 @@ Vou começar falando sobre as funções que tem como objetivo criar uma interaç
 *   e novaLista().
 
 
-Seus nomes são o suficiente para sabermos com que botão cada uma dessas funções interage.
+Seus nomes são o suficiente para sabermos com que botão cada uma dessas funções interage (observar a imagem acima).
 
 
 O que posso dizer sobre estas funções é que ambas utilizam fuções do javaScript para interagir com o arquivo index.html. A função adicionarAmigo() é responsavel por pegar o nome que foi escrito no espaço que foi destinado para tal e adicionar a nossa lista de amigos se e somente se o nome escrito não for uma string vazia ("") ou um nome que já está na lista (necessário para evitar confusão).
