@@ -59,8 +59,9 @@ function sortearAmigo(){
     let posicaoAmigo = parseInt(Math.random() * amigos.length);
     let sortudo = document.createElement("li");
     sortudo.textContent = amigos[posicaoAmigo];
-    sorteado.appendChild(sortudo);
+    sorteado.appendChild('O amigo secretro sorteado é: ${sortudo}.');
 }
+
 function novaLista(){
     limparCampo();
     limparListaExibida(sorteado, "resultado");
