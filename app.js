@@ -58,8 +58,8 @@ function sortearAmigo(){
     limparListaExibida(sorteado, "resultado")
     let posicaoAmigo = parseInt(Math.random() * amigos.length);
     let sortudo = document.createElement("li");
-    sortudo.textContent = amigos[posicaoAmigo];
-    sorteado.appendChild('O amigo secretro sorteado é: ${sortudo}.');
+    sortudo.textContent = `O amigo secreto sorteado é: ${amigos[posicaoAmigo]}`;
+    sorteado.appendChild(sortudo);
 }
 
 function novaLista(){
